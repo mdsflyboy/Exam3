@@ -11,7 +11,7 @@ public class MaxHeap<K, V> {
 		// Constructor for the max heap
 		this.capacity = capacity;
 		this.comparator = comparator;
-		entries = new ArrayList<>();
+		entries = new ArrayList<>(capacity);
 	}
 
 	// Method to add the key value pair in the heap, remember to satisfy max heap
@@ -64,9 +64,7 @@ public class MaxHeap<K, V> {
 		if (index <= 0) {
 			return;
 		}
-		HeapEntry<K, V> e = this.entries.get(index);
-		HeapEntry<K, V> parent = this.entries.get(parent(index));
-		int comp = this.comparator.compare(e.key, parent.key);
+		int comp = compare(index, parent(index));
 		if (comp > 0) {
 			swap(index, parent(index));
 			bubbleUp(parent(index));
@@ -102,12 +100,17 @@ public class MaxHeap<K, V> {
 	 * @param i2 index 2
 	 */
 	private int compare(int i1, int i2) {
-		return comparator.compare(getKey(i1), getKey(i2));
+		return comparator.compare(getValue(i1), getValue(i2));
 	}
 
 	private K getKey(int index) {
 		return entries.get(index).getKey();
 	}
+
+	private V getValue(int index) {
+		return entries.get(index).getValue();
+	}
+
 
 	private int parent(int index) {
 		return index / 2;

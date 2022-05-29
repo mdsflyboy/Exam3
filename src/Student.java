@@ -11,4 +11,9 @@ public class Student {
 		this.marks = marks;
 	}
 
+	@Override
+	public int hashCode() {
+		return (int) section;
+	}
+
 }

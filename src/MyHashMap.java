@@ -36,6 +36,10 @@ public class MyHashMap<K, V> implements DefaultMap<K, V> {
             throw new IllegalArgumentException(ILLEGAL_ARG_CAPACITY);
         buckets = new ArrayList<>(initialCapacity);
 
+        for(int i = 0; i < capacity; i++) {
+            buckets.add(new MaxHeap<>(1, myComparator));
+        }
+
         updateLoadFactor();
     }
 
@@ -63,6 +67,8 @@ public class MyHashMap<K, V> implements DefaultMap<K, V> {
 
         // Method to get the value of given key
         int index = getItemIndex(key);
+        if(buckets.get(index).peek() == null)
+            return null;
         return buckets.get(index).peek().getValue();
     }
 

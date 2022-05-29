@@ -1,0 +1,13 @@
+make: Entering directory 'c:/Users/mdsfl/Documents/GitHub/Exam3'
+javac -cp ".;lib/junit-4.12.jar;lib/hamcrest-core-1.3.jar;build/*.class" -d build src/ArrayListADT.java src/CircularArrayList.java src/CircularArrayListTest.java src/DefaultMap.java src/FileReader.java src/MaxHeap.java src/MyHashMap.java src/MyHashMapTest.java src/Student.java
+javac -cp ".;lib/junit-4.12.jar;lib/hamcrest-core-1.3.jar;build/*.class" -d build src/ArrayListADT.java src/CircularArrayList.java src/CircularArrayListTest.java src/DefaultMap.java src/FileReader.java src/MaxHeap.java src/MyHashMap.java src/MyHashMapTest.java src/Student.java
+javac -cp ".;lib/junit-4.12.jar;lib/hamcrest-core-1.3.jar;build/*.class" -d build src/ArrayListADT.java src/CircularArrayList.java src/CircularArrayListTest.java src/DefaultMap.java src/FileReader.java src/MaxHeap.java src/MyHashMap.java src/MyHashMapTest.java src/Student.java
+javac -cp ".;lib/junit-4.12.jar;lib/hamcrest-core-1.3.jar;build/*.class" -d build src/ArrayListADT.java src/CircularArrayList.java src/CircularArrayListTest.java src/DefaultMap.java src/FileReader.java src/MaxHeap.java src/MyHashMap.java src/MyHashMapTest.java src/Student.java
+javac -cp ".;lib/junit-4.12.jar;lib/hamcrest-core-1.3.jar;build/*.class" -d build src/ArrayListADT.java src/CircularArrayList.java src/CircularArrayListTest.java src/DefaultMap.java src/FileReader.java src/MaxHeap.java src/MyHashMap.java src/MyHashMapTest.java src/Student.java
+javac -cp ".;lib/junit-4.12.jar;lib/hamcrest-core-1.3.jar;build/*.class" -d build src/ArrayListADT.java src/CircularArrayList.java src/CircularArrayListTest.java src/DefaultMap.java src/FileReader.java src/MaxHeap.java src/MyHashMap.java src/MyHashMapTest.java src/Student.java
+javac -cp ".;lib/junit-4.12.jar;lib/hamcrest-core-1.3.jar;build/*.class" -d build src/ArrayListADT.java src/CircularArrayList.java src/CircularArrayListTest.java src/DefaultMap.java src/FileReader.java src/MaxHeap.java src/MyHashMap.java src/MyHashMapTest.java src/Student.java
+javac -cp ".;lib/junit-4.12.jar;lib/hamcrest-core-1.3.jar;build/*.class" -d build src/ArrayListADT.java src/CircularArrayList.java src/CircularArrayListTest.java src/DefaultMap.java src/FileReader.java src/MaxHeap.java src/MyHashMap.java src/MyHashMapTest.java src/Student.java
+javac -cp ".;lib/junit-4.12.jar;lib/hamcrest-core-1.3.jar;build/*.class" -d build src/ArrayListADT.java src/CircularArrayList.java src/CircularArrayListTest.java src/DefaultMap.java src/FileReader.java src/MaxHeap.java src/MyHashMap.java src/MyHashMapTest.java src/Student.java
+java -cp ".;lib/junit-4.12.jar;lib/hamcrest-core-1.3.jar;build/*.class" org.junit.runner.JUnitCore  CircularArrayListTest
+make: Leaving directory 'c:/Users/mdsfl/Documents/GitHub/Exam3'
+ 
