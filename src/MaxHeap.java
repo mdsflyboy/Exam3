@@ -5,9 +5,9 @@ public class MaxHeap<K, V> {
 	List<HeapEntry<K, V>> entries;
 	int capacity;
 	int heapSize = 0;
-	Comparator<V> comparator;
+	Comparator comparator;
 
-	public MaxHeap(int capacity, Comparator<V> comparator) {
+	public MaxHeap(int capacity, Comparator comparator) {
 		// Constructor for the max heap
 		this.capacity = capacity;
 		this.comparator = comparator;

@@ -1,4 +1,5 @@
 import java.util.Comparator;
+import java.util.List;
 
 /**
  * 
@@ -30,7 +31,7 @@ public interface DefaultMap<K, V> {
 
 	/**
 	 * @return the value corresponding to the specified key, null if key doesn't
-	 *         exist in hash map
+	 * exist in hash map
 	 * @throws IllegalArgument exception if the key is null
 	 */
 	V get(K key) throws IllegalArgumentException;

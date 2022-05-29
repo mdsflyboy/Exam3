@@ -34,9 +34,9 @@ public class FileReader {
 				hashMap.put(section[0], student);
 			}
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			// e.printStackTrace();
 		} catch (IOException e) {
-			e.printStackTrace();
+			// e.printStackTrace();
 		}
 	}
 
@@ -48,7 +48,6 @@ public class FileReader {
 	public class StudentCompator implements Comparator<Student> {
 		@Override
 		public int compare(Student o1, Student o2) {
-			// TODO Auto-generated method stub
 			if (o1.marks > o2.marks)
 				return 1;
 			if (o1.marks < o2.marks)

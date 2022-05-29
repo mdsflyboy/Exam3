@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 29 06:18:19 2022
+# Make data base, printed on Sun May 29 06:35:54 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ USERPROFILE = C:\Users\mdsfl
 # environment
 LOCALAPPDATA = C:\Users\mdsfl\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-79c249f0-9977-442d-a492-ff1467ba636f-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-4c233f16-5d1f-4a57-8e77-799dcd104f8b-sock
 # environment
 VSCODE_CWD = C:\Users\mdsfl\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -39,7 +39,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20532_VLPRPPOJIQIOGYMC
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_25636_LCSFPOUTCRVWLKXQ
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -97,7 +97,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 20532
+VSCODE_PID = 25636
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -215,7 +215,8 @@ VSCODE_IPC_HOOK = \\.\pipe\90e21258becebd148bdfad031ce69590-1.67.2-main-sock
 # automatic
 <F = $(notdir $<)
 # default
-SUFFIXES := 
+SUFFI 
+XES := 
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
@@ -229,7 +230,8 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 # variable set hash-table stats:
 # Load=107/1024=10%, Rehash=0, Collisions=11/140=8%
 
-# Pattern-specific Variable Values
+# Pattern-specific Varia 
+ble Values
 
 # No pattern-specific variable values.
 
@@ -305,7 +307,8 @@ src/Student.class: src/ArrayListADT.java src/CircularArrayList.java src/Circular
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 13):
+#  recipe to execut 
+e (from 'Makefile', line 13):
 	javac -cp $(CLASSPATH) -d build $(SOURCEFILES)
 
 src/MyHashMap.class: src/ArrayListADT.java src/CircularArrayList.java src/CircularArrayListTest.java src/DefaultMap.java src/FileReader.java src/MaxHeap.java src/MyHashMap.java src/MyHashMapTest.java src/Student.java
@@ -404,6 +407,6 @@ src/ArrayListADT.java:
 # strcache performance: lookups = 71 / hit rate = 36%
 # hash-table stats:
 # Load=45/8192=1%, Rehash=0, Collisions=0/71=0%
-# Finished Make data base on Sun May 29 06:18:19 2022
+# Finished Make data base on Sun May 29 06:35:54 2022
 
  
