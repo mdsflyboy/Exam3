@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 29 05:17:17 2022
+# Make data base, printed on Sun May 29 06:18:19 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ USERPROFILE = C:\Users\mdsfl
 # environment
 LOCALAPPDATA = C:\Users\mdsfl\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-7ecaefa4-295d-40d3-aec5-cc58469f5a88-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-79c249f0-9977-442d-a492-ff1467ba636f-sock
 # environment
 VSCODE_CWD = C:\Users\mdsfl\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -39,7 +39,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16816_HEZVMRWEUAYXYKOW
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20532_VLPRPPOJIQIOGYMC
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -97,7 +97,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 16816
+VSCODE_PID = 20532
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -235,10 +235,10 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 
 # Directories
 
-# src (key c:/Users/mdsfl/Documents/GitHub/Exam3/src, mtime 1653824384): 13 files, no impossibilities.
-# . (key c:/Users/mdsfl/Documents/GitHub/Exam3, mtime 1653826635): 11 files, no impossibilities.
+# src (key c:/Users/mdsfl/Documents/GitHub/Exam3/src, mtime 1653828755): 13 files, no impossibilities.
+# . (key c:/Users/mdsfl/Documents/GitHub/Exam3, mtime 1653828755): 12 files, no impossibilities.
 
-# 24 files, no impossibilities in 2 directories.
+# 25 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -398,12 +398,12 @@ src/ArrayListADT.java:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 44 / storage = 681 B / avg = 15 B
-# current buf: size = 8174 B / used = 681 B / count = 44 / avg = 15 B
+# strcache buffers: 1 (0) / strings = 45 / storage = 691 B / avg = 15 B
+# current buf: size = 8174 B / used = 691 B / count = 45 / avg = 15 B
 
-# strcache performance: lookups = 70 / hit rate = 37%
+# strcache performance: lookups = 71 / hit rate = 36%
 # hash-table stats:
-# Load=44/8192=1%, Rehash=0, Collisions=0/70=0%
-# Finished Make data base on Sun May 29 05:17:17 2022
+# Load=45/8192=1%, Rehash=0, Collisions=0/71=0%
+# Finished Make data base on Sun May 29 06:18:19 2022
 
  

@@ -49,9 +49,9 @@ public class CircularArrayList<T> implements ArrayListADT<T> {
 	public T get(int index) throws Exception {
 		// Method to get element at a given index of the circularArrayList
 		if (index < 0)
-			throw new Exception("Element doesn’t exist");
+			throw new Exception("Element doesn't exist");
 		if (index >= size)
-			throw new Exception("Element doesn’t exist");
+			throw new Exception("Element doesn't exist");
 		int toLookup = indexOf(index);
 		return arrayList[toLookup];
 	}
