@@ -17,10 +17,10 @@ public class MaxHeap<K, V> {
 	// Method to add the key value pair in the heap, remember to satisfy max heap
 	// Property
 	public void add(K key, V value) {
-		HeapEntry<K,V> newElmt = new HeapEntry<K,V>(key, value);
+		HeapEntry<K, V> newElmt = new HeapEntry<K, V>(key, value);
 		entries.add(newElmt);
 		heapSize++;
-		bubbleUp(heapSize-1);
+		bubbleUp(heapSize - 1);
 	}
 
 	public HeapEntry<K, V> peek() {
@@ -110,7 +110,6 @@ public class MaxHeap<K, V> {
 	private V getValue(int index) {
 		return entries.get(index).getValue();
 	}
-
 
 	private int parent(int index) {
 		return index / 2;
