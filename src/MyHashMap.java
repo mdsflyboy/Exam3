@@ -14,7 +14,6 @@ public class MyHashMap<K, V> implements DefaultMap<K, V> {
     private int capacity;
     private int size;
     private Comparator myComparator;
-    private Character[] sections;
 
     // Use this instance variable for Separate Chaining conflict resolution
     // private List<HashMapEntry<K, V>>[] buckets;
@@ -42,12 +41,19 @@ public class MyHashMap<K, V> implements DefaultMap<K, V> {
 
     @Override
     public boolean put(K key, V value) throws IllegalArgumentException {
-        if (key == null)
+        if (key == null){
             throw new IllegalArgumentException(ILLEGAL_ARG_NULL_KEY);
-
+        }
         // Method to add the key value pair to the hashMap
         updateLoadFactor();
-        return false;
+
+        int index = getItemIndex(key);
+        MaxHeap<K,V> bucket = buckets.get(index);
+        if(bucket == null){
+            bucket = new MaxHeap<K,V>(1, myComparator);
+        }
+        bucket.add(key, value);
+        return true;
     }
 
     @Override
@@ -56,7 +62,8 @@ public class MyHashMap<K, V> implements DefaultMap<K, V> {
             throw new IllegalArgumentException(ILLEGAL_ARG_NULL_KEY);
 
         // Method to get the value of given key
-        return null;
+        int index = getItemIndex(key);
+        return buckets.get(index).peek().getValue();
     }
 
     @Override
@@ -64,7 +71,9 @@ public class MyHashMap<K, V> implements DefaultMap<K, V> {
         if (key == null)
             throw new IllegalArgumentException(ILLEGAL_ARG_NULL_KEY);
         // Method to check if key is present
-        return false;
+
+        int index = getItemIndex(key);
+        return buckets.get(index).peek() != null;
     }
 
     @Override
@@ -79,12 +88,12 @@ public class MyHashMap<K, V> implements DefaultMap<K, V> {
         return size == 0;
     }
 
-    private int getCharIndex(char c){
-        return ((int) c - 65) % capacity;
-    }
-
     private void updateLoadFactor(){
         loadFactor = size/capacity;
+    }
+
+    private int getItemIndex(K key){
+        return key.hashCode() % capacity;
     }
 
     protected static class HashMapEntry<K, V> implements DefaultMap.Entry<K, V> {

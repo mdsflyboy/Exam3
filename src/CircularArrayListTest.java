@@ -6,16 +6,24 @@ public class CircularArrayListTest {
 
 	@Test
 	public void test_baseCase() throws Exception {
-		ArrayListADT<Integer> cal = new CircularArrayList<Integer>();
+		ArrayListADT<Integer> cal = new CircularArrayList<Integer>(10);
 
-		assertEquals(100, cal.getCapacity());
+		// Complete testcase to check elements at few positions
+		cal.addRear(1);
+		cal.addRear(2);
+		cal.addRear(3);
+		cal.addRear(4);
+
+		assertEquals((Integer) 1, cal.get(0));
+		assertEquals((Integer) 2, cal.get(1));
+		assertEquals((Integer) 3, cal.get(2));
+		assertEquals((Integer) 4, cal.get(3));
 	}
 
 	@Test
 	public void test_addRear() throws Exception {
 
 		ArrayListADT<Integer> cal = new CircularArrayList<Integer>(4);
-		// Complete testcase to check elements at few positions
 		cal.addRear(1);
 		cal.addRear(2);
 		cal.addRear(3);
