@@ -38,6 +38,7 @@ public class MyHashMap<K, V> implements DefaultMap<K, V> {
         public boolean put(K key, V value) throws IllegalArgumentException {
 
            //Method to add the key value pair to the hashMap
+            return false;
         }
 
 
@@ -46,21 +47,25 @@ public class MyHashMap<K, V> implements DefaultMap<K, V> {
         public V get(K key) throws IllegalArgumentException {
 
             //Method to get the value of given key
+            return null;
         }
 
     @Override
         public boolean containsKey(K key) throws IllegalArgumentException {
             //Method to check if key is present
+            return false;
         }
 
     @Override
         public int size() {
             //Method to get size of the hashMap
+            return -1;
         }
 
     @Override
         public boolean isEmpty() {
             //Method to check if hashMap is empty
+            return false;
         }
 
     protected static class HashMapEntry<K, V> implements DefaultMap.Entry<K, V> {

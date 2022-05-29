@@ -31,6 +31,7 @@ public class CircularArrayList<T> implements ArrayListADT<T>{
 	public T get(int index) throws Exception {
 		
 		//Method to get element at a given index of the circularArrayList
+		return null;
 	}
 	
 
@@ -39,6 +40,31 @@ public class CircularArrayList<T> implements ArrayListADT<T>{
 	public T remove() {
 		
 		//Method to remove the element from the front
+		return null;
+	}
+
+	@Override
+	public int getSize() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getRear() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getFront() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getCapacity() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	

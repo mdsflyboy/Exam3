@@ -10,7 +10,7 @@ Comparator comparator;
 
     public MaxHeap(int capacity, Comparator comparator){
         // Constructor for the max heap
-       
+
     }
 
 	public void add(K key, V value){
@@ -20,10 +20,12 @@ Comparator comparator;
 
 	public HeapEntry<K,V> peek() {
 		// Method to return the max element in the heap
+		return null;
 	}
 	
 	public HeapEntry<K,V> remove() {
 		//Method to remove the max element in the heap, remember to satisfy max heap Property
+		return null;
 	}
 	
 }
