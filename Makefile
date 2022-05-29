@@ -8,6 +8,6 @@ SOURCEFILES=$(wildcard src/*.java)
 OBJFILES=$(SOURCEFILES:%.java=%.class)
 
 test: $(OBJFILES)
-	java -cp $(CLASSPATH) org.junit.runner.JUnitCore  MarkdownParseTest
+	java -cp $(CLASSPATH) org.junit.runner.JUnitCore  CircularArrayListTest
 $(OBJFILES): $(SOURCEFILES)
 	javac -cp $(CLASSPATH) -d build $(SOURCEFILES)
